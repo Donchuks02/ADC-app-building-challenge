@@ -71,13 +71,17 @@
        }
 
        .pop-up-container {
-           background-color: rgb(179, 179, 179);
+           background-color: white;
            text-align: center;
            padding: 10%;
            border-radius: 10px;
            position: absolute;
            top: -250px;
            left: 25%;
+       }
+
+       .pop-up-section span {
+           font-weight: bold;
        }
 
        #pop-up-text {
