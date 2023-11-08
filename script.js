@@ -28,6 +28,7 @@ yesButton.addEventListener('click', function() {
     popUpEl.classList.add('hidden')
     inputFieldValue.value = `${inputValue}.00`;
     errorMessage.textContent = ` `
+    submitButton.classList.add('hidden')
 
 })
 
@@ -35,5 +36,6 @@ yesButton.addEventListener('click', function() {
 
 noButton.addEventListener('click', function() {
     popUpEl.classList.add('hidden')
+    submitButton.classList.add('hidden')
 
 })
