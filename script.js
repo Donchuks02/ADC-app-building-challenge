@@ -49,7 +49,11 @@ yesButton.addEventListener('click', function() {
     inputValue = result
     popUpEl.classList.add('hidden')
     inputFieldValue.value = `${inputValue}.00`;
+<<<<<<< HEAD
     errorMessage.textContent = ' '
+=======
+    errorMessage.textContent = ` `
+>>>>>>> 594e8afb6374132f15a03beef6423d5afa60b74b
     submitButton.classList.add('hidden')
 
 })
@@ -61,6 +65,9 @@ yesButton.addEventListener('click', function() {
 noButton.addEventListener('click', function() {
     popUpEl.classList.add('hidden')
     submitButton.classList.add('hidden')
+<<<<<<< HEAD
     errorMessage.textContent = ' '
+=======
+>>>>>>> 594e8afb6374132f15a03beef6423d5afa60b74b
 
 })
