@@ -1,0 +1,109 @@
+       *,
+       *::before,
+       *::after {
+           box-sizing: border-box;
+       }
+
+       body {
+           margin: 0;
+           font-family: 'Montserrat', sans-serif;
+           position: relative;
+           background-color: gray;
+       }
+
+       .container {
+           width: 50%;
+           max-width: 1200px;
+           margin: 15% auto;
+       }
+
+       .myForm {
+           padding: 10%;
+           display: flex;
+           flex-direction: column;
+           background-color: white;
+           border-radius: 6px;
+           color: rgb(163, 45, 163);
+           box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px, rgba(0, 0, 0, 0.23)0px 6px 6px;
+       }
+
+       .form-container {
+           position: relative;
+       }
+
+       #SubmitBtn,
+       #yesBtn,
+       #noBtn {
+           width: fit-content;
+           padding: 10px;
+           border-radius: 10px;
+           border: none;
+           background-color: rgb(99, 19, 99);
+           color: white;
+           cursor: pointer;
+           box-shadow: rgba(0, 0, 0, 0.19)0px 10px 20px, rgba(0, 0, 0, 0.23)0px 6px 6px;
+       }
+
+       .submitBtn-container {
+           display: flex;
+           justify-content: flex-end;
+       }
+
+       #SubmitBtn:hover,
+       #yesBtn:hover,
+       #noBtn:hover {
+           background-color: rgb(32, 9, 32);
+       }
+
+       #inputField {
+           height: 40px;
+           width: 95%;
+           border-radius: 5px;
+           padding: 10px;
+           border: none;
+           color: rgb(163, 45, 163);
+           background-color: rgba(206, 137, 206, 0.267);
+           margin-bottom: 15px;
+       }
+
+       #inputField:focus {
+           outline: 1px solid rgb(173, 33, 173);
+       }
+
+       .pop-up-container {
+           background-color: rgb(179, 179, 179);
+           text-align: center;
+           padding: 10%;
+           border-radius: 10px;
+           position: absolute;
+           top: -250px;
+           left: 25%;
+       }
+
+       #pop-up-text {
+           margin-bottom: 30px;
+           color: rgb(163, 45, 163);
+       }
+
+       #errorMsg {
+           color: red;
+           font-size: .8rem;
+       }
+
+       .hidden {
+           display: none;
+       }
+
+       @media (max-width: 700px) {
+           .container {
+               width: 65%;
+               margin: 65% auto;
+           }
+           .pop-up-container {
+               top: -280px;
+               left: 17.5%;
+           }
+           #inputField {
+               width: 90%;
+           }
+       }

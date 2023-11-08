@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADC app-building-challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-section">
+        <div class="form-container container">
+            <form class="myForm">
+                <label for="number">Enter Total Purchase :</label><span id="errorMsg"></span><br>
+
+                <div class="inputfield-container">
+                    <i>&dollar;</i>
+                    <input id="inputField" type="number" step="0.01" name="number" id=""> <br>
+                </div>
+
+                <div class="submitBtn-container">
+                    <input id="SubmitBtn" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <div class="pop-up-section hidden ">
+            <div class="pop-up-container container">
+                <p id="pop-up-text">Would You Like To Round-up Your Purchase ? </p>
+                <input id="yesBtn" type="button" value="Yes">
+                <input id="noBtn" type="button" value="No">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+
+
+</html>
